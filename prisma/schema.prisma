@@ -7,7 +7,8 @@ generator client {
 
 datasource db {
   provider = "mysql"
-  url      = env("DATABASE_URL")
+  url      = "mysql://root:@localhost:3306/nodejs_restfull_api"
+  // url      = env("DATABASE_URL")
 }
 
 model User {
